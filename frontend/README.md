@@ -63,6 +63,16 @@ To install it on GCP:
    - **Location to deploy**
    - **Cloud Run Service URL**
    - **Client ID**
+   Example:
+   ```bash
+   ./deploy_frontend.sh \
+     \
+    ${GOOGLE_CLOUD_PROJECT} \
+    service-account-email@example.iam.gserviceaccount.com \
+    us-central1 \
+    https://dreamboard-backend-123456.us-central1.run.app \
+    oauth-client-id-that-you-noted-down.apps.googleusercontent.com
+   ```
 5. Add the deployed frontend URL to the 'Authorized JavaScript origins' in your Client ID.
    - The frontend URL should look something like: https://dreamboard-frontend-{PROJECT_NUMBER}.{LOCATION}.run.app
    - Go to the [Credentials page](http://console.cloud.google.com/apis/credentials) in the Google Cloud console.

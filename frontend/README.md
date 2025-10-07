@@ -53,13 +53,14 @@ To install it on GCP:
    - On the 'Authorized JavaScript origins' section, include the following URLs if you are testing the solution on your local machine:
       - http://localhost
       - http://localhost:4200
+  - Submit and aquire the Client ID (note it down)
 
    Note: You will add the production URL in the next step once the frontend is deployed.
 4. Navigate to the frontend folder and run deploy_frontend.sh with the following arguments noted from the previous step in the following order:
 
    - **GCP Project ID**
-   - **Service Account Email** (the SA created during the backend deployment)
    - **Cloud Storage Bucket Name**
+   - **Service Account Email** (the SA created during the backend deployment)
    - **Location to deploy**
    - **Cloud Run Service URL**
    - **Client ID**
